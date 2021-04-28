@@ -1,7 +1,10 @@
-def firstword():
-    words = input()
-    firstword = words.split()[0]
-    print(firstword(words))
-    return firstword
+def firstword(words):
+    for i in words:
+        firstword = words.split()[0]
+        words.find(firstword)
+        print(firstword(words))
+        return firstword
 
-firstword()
+words = input()
+
+firstword(words)
